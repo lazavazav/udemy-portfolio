@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="box a"> 
+      <nav>
+        <div class="nav-wrapper">
+        <a href="#!" class="brand-logo grey-text text-lighten-2" id="name" style=margin-left:5px;>Your Name</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#about" class="grey-text text-lighten-2">About</a></li>
+          <li><a href="#samples" class="grey-text text-lighten-2">Samples</a></li>
+          <li><a href="#experience" class="grey-text text-lighten-2">Experience</a></li>
+          <li><a href="#contact" class="grey-text text-lighten-2">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#about" class="sidenav-close">About</a></li>
+      <li><a href="#samples" class="sidenav-close">Samples</a></li>
+      <li><a href="#experience" class="sidenav-close">Experience</a></li>
+      <li><a href="#contact" class="sidenav-close">Contact</a></li>
+    </ul>
+
+  </div>
+
+    <div class="box b">
+      <div id="about">
+        <img src="female dev pic.jpg" alt="profile" width="250" height="250"> <h4>Full Stack Developer</h4>
+        <p>Lorem ipsum dolor sit amet, <span class="text">consectetur adipiscing elit.</span> Etiam nunc erat, fermentum ut varius a, iaculis nec ante. Suspendisse potenti. Vivamus elementum faucibus dapibus. Sed dictum nibh ante, et euismod erat interdum vitae. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque ac efficitur eros. In hac habitasse platea dictumst. Duis eu eros metus. Sed accumsan vel lorem eget accumsan. <span class="text">Nulla bibendum</span> porta lacus ut convallis. Praesent nec elementum metus.
+
+          Aenean eu velit ultrices, congue tortor a, bibendum magna. Integer vel lacus augue. Vestibulum tristique massa eu nisi tincidunt, in laoreet dui imperdiet. <span class="text">Suspendisse porttitor,</span> mi varius convallis lacinia, neque purus suscipit nunc, vitae interdum mi nunc a mauris. Sed at ornare erat, ac dictum massa. Pellentesque augue eros, porta nec libero at, lacinia pretium neque. Etiam posuere faucibus eros. Cras aliquam at ipsum eu lacinia. Sed ut vehicula ligula. Quisque tincidunt ultrices diam in efficitur. Cras laoreet ante ut semper malesuada. Suspendisse faucibus dapibus elit, non luctus mauris porttitor at. <span class="text">Maecenas blandit</span> suscipit interdum.Duis tempus maximus tortor, at porta libero egestas ac. Maecenas luctus posuere erat quis faucibus.</p>
+      </div>
+    </div>
+
+    <div class="box c">
+      <svg viewBox="0 0 100 300">
+        <polygon points = "100 0, 0 150, 100 300" style="fill:lime;stroke:purple;stroke-width:2"/>
+        <polygon points = "200 0, 0 110, 100 300" style="fill:orange;stroke:purple;stroke-width:2"/>
+        <polygon points = "300 0, 0 110, 100 300" style="fill:rgb(97, 95, 90);stroke:purple;stroke-width:2"/>
+      </svg>
+    </div>
+
+    <div class="box d" id="samples">
+
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="law office.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">The Law Group<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">Visit Site</a></p>
+        </div>
+        <div class="card-reveal orange accent-2">
+          <span class="card-title grey-text text-darken-4">About My Code<i class="material-icons right">close</i></span>
+          <p>I used materialize as the css framework along with css grid for the design and javascript for the functionality.The backend uses nodejs and express and it is hosted on Heroku</p>
+          <h6><a href="#" class="codeLink">View The Code</a></h6>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="coffee.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Coffee Shop<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">Visit Site</a></p>
+        </div>
+        <div class="card-reveal purple accent-2">
+          <span class="card-title grey-text text-darken-4">About My Code<i class="material-icons right">close</i></span>
+          <p>This site needed modals for the menu, a google map, plenty of javascript and a paypal interface for online ordering. It is hosted on Glitch</p>
+          <h6><a href="#" class="codeLink">View The Code</a></h6>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="landscapers.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Smith's Landscaping<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">Visit Site</a></p>
+        </div>
+        <div class="card-reveal lime accent-3">
+          <span class="card-title grey-text text-darken-4">About My Code<i class="material-icons right">close</i></span>
+          <p>This client needed a site for their landscape business. I used Bootsrtrap 4 and other responsive techniques like media queries and flexbox for the layout. It is hosted on Netlify</p>
+          <h6><a href="#" class="codeLink">View The Code</a></h6>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="box e" id="experience">
+     
+<ul>
+  <li class="list">
+    <i class="material-icons orange-text text-darken-4">star_border</i><h6 class="date">2019-Present</h6>: Freelance Web Developer
+  </li>
+  <li class="list">
+    <i class="material-icons orange-text text-darken-4">star_border</i><h6 class="date">2018</h6>: Intern at IT Department of City Bank
+  </li>
+  <li class="list">
+    <i class="material-icons orange-text text-darken-4">star_border</i><h6 class="date">2016-2018</h6>: Data Analyst at Wells Fargo Bank
+  </li>
+  <li class="list">
+    <i class="material-icons orange-text text-darken-4">star_border</i><h6 class="date">2013-2016</h6>: Manager of Target Electronics Department
+  </li>
+  <li class="list">
+    <i class="material-icons purple-text text-darken-4" id="educ">star</i><h6 class="date">Click Icon to View Education</h6>
+  </li> 
+</ul>
+
+    </div>
+
+<div class="modal" id="coursesModal">
+  <div class="course-content">
+    <span id="closeBtn">&times;</span>
+    <ul class="courseList"><h5>Completed Course Work</h5>
+      <li class="courses">Responsive Web Design</li>
+      <li class="courses">Css Grid and Flexbox</li>
+      <li class="courses">Modern Javascript</li>
+      <li class="courses">Design for Developers</li>
+      <li class="courses">Css In-Depth</li>
+      <li class="courses">Intro to React</li>
+    </ul>
+  </div>
+</div>
+
+    <div class="box f" id="contact">
+      <div class="row">
+        <h4>Contact Me</h4>
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="first_name" type="text">
+              <label for="first_name" style=color:orange;>First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text">
+              <label for="last_name" style=color:orange;>Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email">
+              <label for="email" style=color:orange;>Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">create</i>
+              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+              <label for="icon_prefix2" style=color:orange;>Message</label>
+            </div>
+            <a class="btn-small">Send</a>
+          </div>
+          </div>  
+        </form>
+      </div>
+    </div>
+
+    <div class="box g">
+      <div><a href="#"><img src="github.png" alt="Github Icon" height="60px" width="60px"></a></div>
+      <div id="footinfo">
+        <h6>Your Name</h6>
+        <p>me@gmail.com</p>
+      </div>
+      <div><a href="#"><img src="codepen.png" alt="Codepen Icon" height="60px" width="60px"></a>
+    </div>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

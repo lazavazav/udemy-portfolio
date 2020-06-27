@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth; 
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: linear-gradient(to right, #9C9990, #8E8C83, #807E76, #64625C);
+  width: 100%;
+}
+.wrapper {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, auto);
+  background-image: linear-gradient(to right, #9C9990, #8E8C83, #807E76, #64625C);
+  color: #151114;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.box {
+  /* border: 3px solid black; */
+  border-radius: 5px; 
+}
+
+nav {
+  background-color: rgb(233, 156, 14);
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#about img {
+  float: left;
+  border-radius: 50%;
+  shape-outside: circle(50%);
+  margin: 20px;
+}
+
+.text {
+  font-weight: bold;
+  color: purple;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'EB Garamond', serif;
+}
+
+.card {
+width: 250px;
+}
+
+.codeLink {
+  color: #151114;
+}
+
+.date{
+  display: inline;
+}
+
+.a {
+  grid-column: 1 / 11;
+  grid-row: 1 ;
+}
+.b {
+  grid-column: 1 / 11;
+  grid-row: 2;
+}
+.c {
+  grid-column: 11 / -1;
+  grid-row: 1 / 3;
+}
+
+.d {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  grid-column: 1 / -1;
+  grid-row: 3;
+}
+
+.e {
+  grid-column: 1 / -1;
+  grid-row: 4;
+}
+
+.f {
+  display: flex;
+  justify-content: center;
+  grid-column: 1 / -1;
+  grid-row: 5;
+  padding: 20px;
+}
+
+.g {
+  display: flex;
+  justify-content: space-evenly;
+  grid-column: 1 / -1;
+  grid-row: 6;
+}
+
+#footinfo {
+  color: purple;
+  text-align: center;
+}
+
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0,0,0,0.5);
+  z-index: 2;
+}
+
+.course-content {
+  background-color: #64625C;
+  margin: 30px auto 30px auto;
+  padding: 20px;
+  width: 50%;
+  box-shadow: 5px 10px #41403d;
+  color: #e8f2ea;
+  font-size: 15px;
+}
+
+#closeBtn {
+  color: #e8f2ea;
+  float: right;
+  font-size: 30px; 
+}
+
+#educ:hover {
+  background-color: orangered;
+  cursor: pointer;
+}
+
+#closeBtn:hover {
+  color: lime;
+  cursor: pointer;
+}
+
+ /* icon prefix focus color */
+ .input-field .prefix.active {
+  color: lime;
+}
+
+   /* Inactive/Active Default input field color */
+   .input-field input[type]:not([readonly]),
+   .input-field input[type]:focus:not([readonly]),
+   .input-field textarea:not([readonly]),
+   .input-field textarea:focus:not([readonly]) {
+       border-bottom: 1px solid purple;
+       box-shadow: 0 1px 0 0 purple;
+   }
+
+   .btn-small {
+     background-color: purple;
+     float: right;
+   }
+
+   .btn-small:hover {
+     background-color: lime;
+   }
+
+
+   @media (max-width: 620px) {
+
+    #name {
+      font-size: 15px;
+    }
+
+    body {
+      background-image: 
+        linear-gradient(#9c9990, #8e8c83, #807e76, #64625c); 
+    }
+
+    .wrapper {
+      display: grid;
+      grid-gap: 5px;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(6, auto);
+      background-image:linear-gradient(#9c9990, #8e8c83, #807e76, #64625c); 
+      color: #151114;
+      width: 100%;
+      margin-left: 20px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6{
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    nav {
+      background-color: blue;
+    }
+
+    svg {
+      display: none;
+    }
+
+    h4 {
+      font-size: 25px;
+    }
+
+    #about img {
+      border-radius: 50%;
+      padding: 30px;
+    }
+
+    .text {
+      font-weight: bold;
+      color: blue;
+    }
+
+    .btn-small {
+      background-color: blue;
+    }
+
+   .input-field input[type]:not([readonly]),
+   .input-field input[type]:focus:not([readonly]),
+   .input-field textarea:not([readonly]),
+   .input-field textarea:focus:not([readonly]) {
+       border-bottom: 1px solid blue;
+       box-shadow: 0 1px 0 0 blue;
+   }
+
+   #footinfo {
+     color: blue;
+   }
+
+    
+
+
+    
+
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
